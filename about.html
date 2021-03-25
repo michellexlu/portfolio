@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Cantarell|Unica+One|Dancing+Script|Julius+Sans+One|Cantarell|Patrick+Hand+SC|Lora|Lato">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>About Me</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">Jump to Content</a>
+    <header>
+        <h1><span>On the Move with Michelle</span></h1>
+        <nav>
+            <ul class="nav_links">
+              <li class="nav_item"><a href="index.html">HOME</a></li>
+              <li class="nav_item"><a class="active_page" href="about.html">ABOUT</a></li>
+              <li class="dropdown">
+                <button id="dropbtn">DESTINATIONS</button>
+                <div class="dropdown-content">
+                  <a href="north-america.html">North America</a>
+                  <a href="europe.html">Europe</a>
+                  <p>Asia</p>
+                  <p>Central America</p>
+                  <p>The Caribbean</p>
+                </div>
+              </li>
+              <li class="nav_item"><a href="bucketlist.html">BUCKET LIST</a></li>
+              <li class="nav_item"><a href="contact.html">CONTACT ME</a></li>
+            </ul>
+          </nav>
+    </header>
+    <main id="main">
+        <div class="about_me">
+            <img src="images/me.JPG" alt="Michelle in Menton">
+            <h1><span>Get to Know Me!</span></h1>
+            <p>Hi, I'm Michelle– a 22 year old college student, adventure seeker, and food enthusiast! I'm lucky to call both Boston, where I grew up, and Ann Arbor, 
+                where I currently attend university, my home. As an Asian American, I have always been surrounded by 2 sets of languages, traditions, and cuisines. 
+                My cross-culture upbringing has only fueled a growing desire to explore <em>all</em> of the beautiful cultures of the world. So far, I have visited 20 
+                countries and hope to continue crossing places off my bucket list!</p>
+            <p>I've been fortunate enough to come from a family that shares a passion for travel. Before the age of 2, I had gotten on my first plane and 
+                embarked on a 13 hour flight to China. Ever since then, the airport has always been one of my favorite places because it signifies the start 
+                of a new journey. My ultimate life goal is to visit all 7 continents, and so far, I have 3 down and 4 to go!
+            </p>
+            <p>One of the many factors underlying my wanderlust is my love for language. I found myself taking a great interest in the art of language at a younge age, 
+                which I largely attribute to my bilingualism in English and Mandarin. The significant role that language plays in bringing people together and shaping the 
+                culture of particular social groups is fascinating, and ultimately, that fascination led me to pursue French as a third language. After studying French for 10 years, 
+                I had learned all of the vocab words and verb tenses that I could possibly think of, but my conversational skills still lacked. Thus, I chose to study abroad and live 
+                among the locals in the South of France for a semester with the goal of becoming fluent in the language– and it worked!
+            </p>
+            <p>I could not be more grateful for all of the new people I met, places I visited, and life-changing experiences I had during my semester abroad. Moving 
+                to a foreign country and traveling alone for the first time gave me the opportunity to reflect, learn more about myself, and grow as a person. I often found 
+                myself in situations where I felt out of my comfort zone, but in the end, I came out more confident and independent. After my study abroad experience was 
+                unfortunately cut short due to COVID-19, I have only been able to think about where my next trip will take me!
+            </p>
+
+            <img class="adventure" src="images/me_2.jpg" alt="parasailing">
+            <figcaption>Parasailing in Interlaken!</figcaption>
+        </div>
+    <script>
+        document.getElementById("dropbtn").onclick = function() {
+            location.href = "destinations.html";
+        };
+    </script>
+    </main>
+    <footer>
+        <p>University of Michigan<br/>
+          &copy; Michelle Lu - SI 339 Web Design, Development, and Accessibility</p>
+    </footer>
+  </body>
+</html>

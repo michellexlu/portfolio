@@ -1,0 +1,808 @@
+body{
+    margin: 5px 0px 5px;
+    font-size: 15pt;
+    display: flex;
+    flex-direction: column;
+}
+
+a.skip{
+    background: white;
+    left: 0;
+    padding: 5px;
+    position: absolute;
+    top: -50px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+a.skip:focus{
+    top: 15px;
+    color: black;
+    text-decoration-style: solid;
+}
+
+*:focus{
+    border: 3px solid #4a4035;
+}
+
+#logo{
+    border-radius: 50%;
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+nav{
+    padding: 15px;
+    margin-top: 15px;
+    border-top: 2px solid #4a4035;
+    border-bottom: 2px solid #4a4035;
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav_item a{
+    text-decoration: none;
+    color: #4a4035;
+    font-family: "Unica One", Verdana;
+    font-size: 14pt;
+}
+
+.nav_item a:hover{
+    border-bottom: 3px dotted #D2B48C;
+}
+
+header h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 25pt;
+    color: #4a4035;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+header h1 span{
+    background: url(../images/brushstroke_background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 8px 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/header_photo.jpg");
+    background-size: cover;
+    height: 400px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.banner h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 40pt;
+    color: #4a4035;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.banner p{
+    font-family: "Julius Sans One";
+    color: #4a4035;
+    font-size: 13pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner p span{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .intro{
+    background-image: url(../images/mobile_banner.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    text-align: center;
+    padding: 9px;
+    width: 85%;
+    color: #4a4035;
+}
+
+.intro h2{
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.intro p{
+    padding: 30px 60px 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+#aboutMe{
+    font-family: 'Cantarell', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #4a4035;
+    padding: 10px 30px 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+#aboutMe:hover{
+    opacity: 0.7;
+}
+
+.slideshow{
+    justify-self: center;
+    align-self: center;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.slideshow .mySlides img{
+    width: 320px;
+    height: 400px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    border: 2px solid #4a4035;
+}
+
+.mySlides h4{
+    color: #4a4035;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.mySlides p{
+    font-family: 'Lora', serif;
+    color: #4a4035;
+    padding: 20px 30px;
+    font-size: 15px;
+    line-height: 180%;
+    background: rgb(250, 217, 222);
+    margin-top: 10px;
+}
+
+.favoritePlaces h2{
+    font-family: 'Patrick Hand SC', cursive;
+    text-align: center;
+    font-size: 27px;
+    color: #4a4035;
+    margin-bottom: 20px;
+}
+
+#travel_guide_button{
+    display: block;
+    font-family: 'Patrick Hand SC', cursive;
+    text-align: center;
+    font-size: 27px;
+    color: #4a4035;
+    margin: 0 auto 20px;
+    border: none;
+    background: white;
+    padding: 5px;
+}
+
+#travel_guide_button:hover{
+    text-decoration: underline;
+}
+
+.favoritePlaces{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.favoritePlaces img{
+    max-width: 70%;
+    height: auto;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fav_dest_link, .caption{
+    display: block;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #4a4035;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.fav_dest_link::before, .last_caption::before, .caption::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/location_icon.jpg") no-repeat;
+    margin: 0 6px 0 0;
+}
+
+.last_caption{
+    display: block;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #4a4035;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.collapse_guide{
+    border: 2px solid #D2B48C;
+    padding: 20px;
+    margin: 10px;
+}
+
+.collapse_guide p{
+    font-family: 'Lato', sans-serif;
+    color: #4a4035;
+    letter-spacing: 2px;
+    font-size: 15px;
+    padding-bottom: 7px;
+}
+
+.collapsible {
+    background-color: white;
+    color: #4a4035;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+.active, .collapsible:hover {
+    background-color: #D2B48C;
+}
+
+.collapsible_content {
+    padding: 0 40px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #4a4035;
+    line-height: 110%;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+.collapsible_content li{
+    padding: 10px;
+    font-size: 15px;
+}
+
+.collapsible:before {
+    content: '\02795';
+    font-size: 13px;
+    color: white;
+    float: left;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+  
+.active:before {
+    content: "\2796"
+}
+
+.destinations_header img{
+    width: 100%;
+}
+
+.destinations_header{
+    position: relative;
+}
+
+.destinations_header h2{
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    border: 1px solid rgb(255, 157, 173);
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Lora', serif;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    color: #4a4035;
+    background-color: #fad9de;
+    font-weight: 200;
+}
+
+.destinations_body{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.destinations_body h3{
+    font-family: 'Lora', serif;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #4a4035;
+    font-size: 20px;
+    padding-top: 20px;
+    margin-bottom: 25px;
+}
+
+.dest_card{
+    position: relative;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(255, 157, 173);
+    padding: 20px 20px 60px;
+    margin-top: 20px;
+}
+
+.destinations_body img{
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.dest_button{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 15px 30px;
+    color: #4a4035;
+    background-color: rgb(250, 217, 222);
+    font-weight: bold;
+}
+
+.dest_button_soon{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 15px 30px;
+    color: #4a4035;
+    background-color: rgb(250, 217, 222);
+}
+
+.dest_button:hover{
+    text-decoration: underline;
+}
+
+.north_america h1, .europe h1{
+    font-family: 'Lora', serif;
+    text-align: center;
+    color: #4a4035;
+    margin-top: 45px;
+    font-size: 25px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #4a4035;
+}
+
+.location_header{
+    font-family: 'Lato', sans-serif;
+    margin-top: 20px;
+    padding: 20px 10px 20px;
+    text-align: center;
+    color: #4a4035;
+    letter-spacing: 2px;
+    border-top: 1px solid #4a4035;
+    border-bottom: 1px solid #4a4035;
+    background-color: #fad9de;
+}
+
+.location_header_first{
+    font-family: 'Lato', sans-serif;
+    padding: 20px 10px 20px;
+    text-align: center;
+    color: #4a4035;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #4a4035;
+    background-color: #fad9de;
+}
+
+.usa .visited, .canada .visited, .europe .visited{
+    text-align: center;
+    padding: 10px;
+    color: #4a4035;
+    margin: auto;
+    font-size: 16px;
+    line-height: 180%;
+}
+
+.usa h3, .europe h3{
+    text-align: center;
+    font-size: 20px;
+    color: #4a4035;
+}
+
+.visited h3 span{
+    font-size: 16px;
+}
+
+.visited img{
+    padding: 20px 60px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.visited p{
+    background-color: #fad9de;
+    padding: 10px 20px;
+}
+
+.must-dos{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.canada img{
+    display: block;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.europe_card{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 530px 350px;
+    padding: 30px;
+    align-items: center;
+    background-color: #f0e2cf;
+    margin: 10px 20px 0px;
+    justify-content: center;
+    text-align: center;
+    color: #4a4035;
+}
+
+.europe img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.europe_card p{
+    color: #4a4035;
+    padding: 20px 20px 10px;
+    font-size: 17px;
+    align-self: center;
+    line-height: 150%;
+    text-align: center;
+}
+
+.europe_card h4{
+    padding-bottom: 10px;
+}
+
+.europe_card ol{
+    font-size: 16px;
+}
+
+.buda_img{
+    margin-top: 15px;
+    border: 1px solid #4a4035;
+    padding: 5px;
+}
+
+.france_mustdos{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.fr_food{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 17px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.bullet_list{
+    text-align: left;
+    font-size: 10px;
+    line-height: 200%;
+    font-family: 'Lora', serif;
+    padding-left: 10px;
+}
+
+.bullet_list_2{
+    text-align: left;
+    font-size: 15px;
+    line-height: 200%;
+    font-family: 'Lora', serif;
+    padding-left: 10px;
+}
+
+.bullet_list_2 p{
+    font-size: 13px;
+}
+
+.bullet_list_3 li{
+    text-align: left;
+    font-weight: bold;
+    font-size: 19px;
+    padding-top: 15px;
+    padding-left: 2px;
+    margin-left: 20px;
+    line-height: 150%;
+}
+
+.bullet_list_3 p{
+    font-size: 15px;
+    text-align: left;
+}
+
+.bullet_list_4 li{
+    text-align: left;
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 15px;
+    padding-left: 2px;
+    margin-left: 20px;
+    line-height: 130%;
+}
+
+.bullet_list_4 p{
+    font-size: 16px;
+    text-align: left;
+}
+
+footer{
+    background-color: #4a4035;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    opacity: 0.9;
+    font-family:'Times New Roman', serif;
+    font-size: 12pt;
+    margin-top: 10px;
+}
+
+.italy_caption{
+    font-family: 'Lora', serif;
+    text-align: center;
+    color: #4a4035;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.europe_card .croatia_dest{
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-bottom: 0px;
+}
+
+.about_me img{
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    display: block;
+    margin: auto;
+}
+
+.about_me h1{
+    font-family: "Dancing script", cursive;
+    color: #4a4035;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about_me h1 span{
+    background: #fad9de;
+    padding: 20px;
+}
+
+.about_me p{
+    font-family: 'Lato', sans-serif;
+    line-height: 200%;
+    text-align: justify;
+    color: #4a4035;
+    font-size: 15px;
+    padding: 5px 50px 5px;
+    margin-bottom: 15px;
+}
+
+.about_me .adventure{
+    width: 90%;
+}
+
+.about_me figcaption{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown #dropbtn {
+    border: none;
+    text-decoration: none;
+    color: #4a4035;
+    background: white;
+    font-family: "Unica One", Verdana;
+    font-size: 14pt;
+    padding-top: 0;
+    padding-bottom: 0px;
+}
+
+.nav_item a.active_page, .active_page #dropbtn{
+    border-bottom: 3px dotted #D2B48C;
+}
+
+.dropdown #dropbtn:hover{
+    border-bottom: 3px dotted #D2B48C;
+}
+
+.navbar a:hover, .dropdown:hover #dropbtn {
+    background-color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a, .dropdown-content p{
+    font-family: "Unica One", Verdana;
+    float: none;
+    color: #4a4035;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 17px;
+}
+
+.dropdown-content a:hover{
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.contact_info{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: #fad9de;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+.contact_h1{
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    color: #4a4035;
+    font-size: 45px;
+    margin: 20px auto;
+    align-content: center;
+}
+
+.contact_info p{
+    font-family: 'Lora', sans-serif;
+    color: #4a4035;
+    background: #fad9de;
+    text-align: center;
+    align-self: center;
+    padding-left: 30px;
+    padding-right: 30px; 
+    line-height: 200%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-family: 'Lora', sans-serif;
+}
+  
+input[type=submit] {
+    font-family: 'Lora', sans-serif;
+    background-color: #fad9de;
+    color: #4a4035;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: white;
+}
+  
+.contact_form{
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+}
+
+label{
+    color: #4a4035;
+    font-size: 17px;
+}
+
+@media screen and (min-width: 660px){
+    .banner{
+        display: flex;
+        flex-direction: column;
+        background-image: url("../images/header_photo.jpg");
+        background-size: cover;
+
+        width: 100%;
+        height: 400px;
+        margin: 0;
+    }
+}

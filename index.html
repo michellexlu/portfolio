@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Cantarell|Unica+One|Dancing+Script|Julius+Sans+One|Cantarell|Patrick+Hand+SC|Lora|Lato">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>On the Move with Michelle</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">Jump to Content</a>
+    <header>
+        <img src="images/logo.jpeg" alt="logo" id="logo">
+        <nav>
+          <ul class="nav_links">
+            <li class="nav_item"><a class="active_page" href="index.html">HOME</a></li>
+            <li class="nav_item"><a href="about.html">ABOUT</a></li>
+            <li class="dropdown">
+              <button id="dropbtn">DESTINATIONS</button>
+              <div class="dropdown-content">
+                <a href="north-america.html">North America</a>
+                <a href="europe.html">Europe</a>
+                <p>Asia</p>
+                <p>Central America</p>
+                <p>The Caribbean</p>
+              </div>
+            </li>
+            <li class="nav_item"><a href="bucketlist.html">BUCKET LIST</a></li>
+            <li class="nav_item"><a href="contact.html">CONTACT ME</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main id="main">
+      <div class="banner">
+        <h1><span>On the Move with Michelle</span></h1>
+        <p><span> WANDER OFTEN • WONDER ALWAYS <span></p>
+      </div>
+      <div class="about">
+          <div class="intro">
+            <h2>ABOUT ME</h2>
+            <div class="slideshow">
+              <div class="mySlides">
+                <img class="imageGallery" src="images/santorini.JPG" alt="santorini">
+                <img class="imageGallery" src="images/brussels.JPG" alt="brussels">
+                <img class="imageGallery" src="images/mykonos.JPG" alt="mykonos">
+                <img class="imageGallery" src="images/nice.jpeg" alt="nice">
+                <img class="imageGallery" src="images/greece.JPG" alt="greece">
+            </div>
+              <button class="left_button" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="right_button" onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+            <p>Hi, I'm Michelle– a 22 year old college student, adventure seeker, and food enthusiast! 
+              I'm lucky to call both Boston, where I grew up, and Ann Arbor, where I currently attend university, my home. 
+              So far, I have visited 20 countries and hope to continue crossing places off my bucket list!
+            </p>
+            <button type="button" id="aboutMe">READ FULL STORY</button>
+          </div>
+      </div>
+      <div class="favoritePlaces">
+        <hr>
+        <h2>- FAVORITE DESTINATIONS -</h2>
+        <img src="images/Amsterdam.jpg" alt="Amsterdam Bike">
+        <a class="fav_dest_link" href="europe.html#amsterdam">Amsterdam, Netherlands</a></li>
+        <img src="images/Dubrovnik.jpg" alt="Walls of Dubrovnik">
+        <a class="fav_dest_link" href="europe.html#croatia">Dubrovnik, Croatia</a></li>
+        <img src="images/Menton.jpg" alt="Menton, France">
+        <figcaption class="caption">Menton, France</figcaption>
+        <img src="images/NYC.JPG" alt="New York City">
+        <a class="fav_dest_link" href="north-america.html#new_york">New York, New York</a></li>
+      </div>
+      <div class="travelGuides">
+        <hr>
+        <button type="button" id="travel_guide_button">- TRAVEL GUIDES -</button>
+        <div class="collapse_guide">
+          <p>Click to Expand</p>
+          <button type="button" class="collapsible">North America</button>
+          <div class="collapsible_content">
+            <ul>
+              <li>USA</li>
+              <li>Canada</li>
+              <li>Mexico</li>
+          </div>
+          <button type="button" class="collapsible">Europe</button>
+          <div class="collapsible_content">
+            <ul>
+              <li>France</li>
+              <li>Italy</li>
+              <li>Spain</li>
+              <li>Greece</li>
+              <li>Croatia</li>
+              <li>Prague</li>
+              <li>Hungary</li>
+              <li>Austria</li>
+              <li>Belgium</li>
+              <li>Netherlands</li>
+              <li>England</li>
+              <li>Switzerland</li>
+              <li>Monaco</li>
+          </div>
+          <button type="button" class="collapsible">Asia</button>
+          <div class="collapsible_content">
+            <ul>
+              <li>China</li>
+              <li>Hong Kong</li>
+          </div>
+          <button type="button" class="collapsible">Central America</button>
+          <div class="collapsible_content">
+            <ul>
+              <li>Honduras</li>
+          </div>
+          <button type="button" class="collapsible">The Caribbean</button>
+          <div class="collapsible_content">
+            <ul>
+              <li>Bahamas</li>
+              <li>Jamaica</li>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.getElementById("travel_guide_button").onclick = function() {
+          location.href = "destinations.html";
+        };
+
+        document.getElementById("aboutMe").onclick = function() {
+          location.href = "about.html";
+        };
+
+        document.getElementById("dropbtn").onclick = function() {
+          location.href = "destinations.html";
+        };
+
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("imageGallery");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+    </main>
+    <footer>
+      <p>University of Michigan<br/>
+        &copy; Michelle Lu - SI 339 Web Design, Development, and Accessibility</p>
+    </footer>
+  </body>
+</html>
