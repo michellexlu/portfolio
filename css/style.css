@@ -53,7 +53,7 @@ nav{
     text-decoration: none;
     color: #4a4035;
     font-family: "Unica One", Verdana;
-    font-size: 14pt;
+    font-size: 14px;
 }
 
 .nav_item a:hover{
@@ -682,7 +682,7 @@ footer{
     color: #4a4035;
     background: white;
     font-family: "Unica One", Verdana;
-    font-size: 14pt;
+    font-size: 14px;
     padding-top: 0;
     padding-bottom: 0px;
 }
