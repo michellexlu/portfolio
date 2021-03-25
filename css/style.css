@@ -49,6 +49,10 @@ nav{
     justify-content: space-evenly;
 }
 
+.nav_item{
+    align-self: center;
+}
+
 .nav_item a{
     text-decoration: none;
     color: #4a4035;
@@ -683,8 +687,7 @@ footer{
     background: white;
     font-family: "Unica One", Verdana;
     font-size: 14px;
-    padding-top: 0;
-    padding-bottom: 0px;
+    padding: 0px;
 }
 
 .nav_item a.active_page, .active_page #dropbtn{
@@ -805,4 +808,18 @@ label{
         height: 400px;
         margin: 0;
     }
+
+    .nav_item a, .dropdown #dropbtn{
+        font-size: 24px;
+    }
+
+    .dropdown-content a, .dropdown-content p{
+        font-size: 20px;
+    }
+    /*
+    .intro{
+        display: flex;
+        flex-direction: row;
+    }
+    */
 }
