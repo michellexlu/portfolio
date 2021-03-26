@@ -342,17 +342,17 @@ main{
 .destinations_header h2{
     display: block;
     position: absolute;
-    width: 300px;
-    height: 100px;
+    width: 275px;
+    height: 95px;
     border: 1px solid rgb(255, 157, 173);
-    top: 200px;
+    top: 150px;
     left: 50%;
     transform: translate(-50%, -50%);
 
     font-family: 'Lora', serif;
     text-align: center;
-    line-height: 100px;
-    font-size: 18px;
+    line-height: 95px;
+    font-size: 17px;
     color: #4a4035;
     background-color: #fad9de;
     font-weight: 200;
