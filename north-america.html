@@ -60,10 +60,10 @@
                 <h3>MUST-DOs</h3>
                 <div class="slideshow">
                     <div class="mySlides">
-                        <img class="imageGallery" src="images/vessel_nyc.jpg" alt="The Vessel">
-                        <img class="imageGallery" src="images/vessel_me.jpg" alt="Me at the Vessel">
-                        <img class="imageGallery" src="images/nyc_building.JPG" alt="NYC Building">
-                        <img class="imageGallery" src="images/nyc_skyline.jpg" alt="NYC Skyline">
+                        <img class="imageGallery1" src="images/vessel_nyc.jpg" alt="The Vessel">
+                        <img class="imageGallery1" src="images/vessel_me.jpg" alt="Me at the Vessel">
+                        <img class="imageGallery1" src="images/nyc_building.JPG" alt="NYC Building">
+                        <img class="imageGallery1" src="images/nyc_skyline.jpg" alt="NYC Skyline">
                         <h4>Visit the Vessel in NYC!</h4>
                         <p>If you're looking for excitement, New York City (also known as the "City that Never Sleeps") is the place for you! 
                             It's the most populous city in the U.S., where the streets are constantly bustling with people no matter the hour of day. 
@@ -73,10 +73,10 @@
                         </p>
                     </div>
                     <div class="mySlides">
-                        <img class="imageGallery" src="images/hawaii_1.jpg" alt="Hawaii Sunset">
-                        <img class="imageGallery" src="images/hawaii_2.jpg" alt="Hawaii Hike">
-                        <img class="imageGallery" src="images/hawaii_3.jpg" alt="Hawaii Sunset">
-                        <img class="imageGallery" src="images/hawaii_4.jpg" alt="Hawaii Palm Trees">
+                        <img class="imageGallery2" src="images/hawaii_1.jpg" alt="Hawaii Sunset">
+                        <img class="imageGallery2" src="images/hawaii_2.jpg" alt="Hawaii Hike">
+                        <img class="imageGallery2" src="images/hawaii_3.jpg" alt="Hawaii Sunset">
+                        <img class="imageGallery2" src="images/hawaii_4.jpg" alt="Hawaii Palm Trees">
                         <h4>Take a Tropical Vacation to Hawaii!</h4>
                         <p>Hawaii is famous for its colorful beaches, natural beauty, and plethora of outdoor activities. I visited the 3 islands of Big Island, Oahu, 
                             and Maui- each with its own unique charm. I would suggest all nature lovers to put Big Island on their bucket list ASAP, as 
@@ -88,10 +88,10 @@
                         </p>
                     </div>
                     <div class="mySlides">
-                        <img class="imageGallery" src="images/mv_1.jpg" alt="Lighthouse">
-                        <img class="imageGallery" src="images/mv_2.jpg" alt="Martha's Vineyard House">
-                        <img class="imageGallery" src="images/mv_3.jpg" alt="Aquinah">
-                        <img class="imageGallery" src="images/mv_4.jpg" alt="Martha's Vineyard Beach">
+                        <img class="imageGallery3" src="images/mv_1.jpg" alt="Lighthouse">
+                        <img class="imageGallery3" src="images/mv_2.jpg" alt="Martha's Vineyard House">
+                        <img class="imageGallery3" src="images/mv_3.jpg" alt="Aquinah">
+                        <img class="imageGallery3" src="images/mv_4.jpg" alt="Martha's Vineyard Beach">
                         <h4>Spend a Summer in Martha's Vineyard!</h4>
                         <p>If you find yourself on the East Coast, you won't regret paying a visit to the beautifiul Island of Martha's Vineyard. 
                             There's a reason why many of your favorite celebrities flock here for the summer, including the Obamas, Clintons, 
@@ -102,10 +102,10 @@
                         </p>
                     </div>
                     <div class="mySlides">
-                        <img class="imageGallery" src="images/Boston_1.jpg" alt="Newbury Street, Boston">
-                        <img class="imageGallery" src="images/Boston_2.jpg" alt="Boston Street">
-                        <img class="imageGallery" src="images/Boston_3.JPG" alt="Boston Commons">
-                        <img class="imageGallery" src="images/Boston_4.JPG" alt="Christmas Time in Boston">
+                        <img class="imageGallery4" src="images/Boston_1.jpg" alt="Newbury Street, Boston">
+                        <img class="imageGallery4" src="images/Boston_2.jpg" alt="Boston Street">
+                        <img class="imageGallery4" src="images/Boston_3.JPG" alt="Boston Commons">
+                        <img class="imageGallery4" src="images/Boston_4.JPG" alt="Christmas Time in Boston">
                         <h4>Take a Weekend Trip to Downtown Boston!</h4>
                         <p>Of course, it's only appropriate for me to boast about my hometown as a must-see. Walking down the cobblestone streets of Boston will instantly transport you 
                             back in history, which earns it the reputation as one of America's most historic cities. I grew up in a suburb outside 
@@ -127,14 +127,24 @@
             <img src="images/toronto.jpg" alt="Toronto">
             <div class="visited">
                 <p>Canada is home to 10 provinces and 3 territories. Out of those, I've only been able to visit Ontario and Quebec but hope to expand my 
-                    travels throughout the country, especially out West. 
+                    travels throughout the country, especially out West. If you're a foodie like I am, I highly recommend taking a trip to the city of 
+                    Toronto. In my humble opinion, I think it offers some of the most delicious and authentic Chinese food you can find outside of China.
                 </p>
             </div>
         </div>
 
         <div class="mexico">
             <h2 class="location_header">MEXICO</h2>
+            <img src="images/cabo.jpg" alt="Cabo San Lucas">
+            <div class="visited">
+              <p>Mexico is a great destination in North America for anyone who's looking for a relaxing beach vacation. Many tourists 
+                choose to stay in a resort, which typically includes beach access, an assortment of delicious food, and refreshing drinks– what 
+                more could you ask for! Personally, I have taken a family vacation in Cancun and a trip with friends to Cabo San Lucas. The white sand beaches in 
+                Cancun were unbeatable, while the water activities and festive nightlife in Cabo made for an exciting and unforgettable visit. When in 
+                Cancun, be sure to take a day trip to see the archeological site of Chichén Itzá, a beautiful complex of ancient Mayan ruins. </p>
+            </div>
         </div>
+
       </div>
     <script>
       document.getElementById("dropbtn").onclick = function() {
@@ -160,19 +170,63 @@
       }
 
       var myIndex = 0;
+      var myIndex_2 = 0;
+      var myIndex_3 = 0;
+      var myIndex_4 = 0;
+
       carousel();
+      carousel2();
+      carousel3();
+      carousel4();
 
       function carousel() {
           var i;
-          var y = document.getElementsByClassName("imageGallery");
+          var y = document.getElementsByClassName("imageGallery1");
           for (i = 0; i < y.length; i++) {
               y[i].style.display = "none";  
           }
           myIndex++;
-          if (myIndex > y.length) {myIndex = 1}    
+          if (myIndex > 4) {myIndex = 1}    
           y[myIndex-1].style.display = "block";  
           setTimeout(carousel, 2000);
       }
+
+      function carousel2() {
+          var i2;
+          var y2 = document.getElementsByClassName("imageGallery2");
+          for (i2 = 0; i2 < y2.length; i2++) {
+              y2[i2].style.display = "none";  
+          }
+          myIndex_2++;
+          if (myIndex_2 > 4) {myIndex_2 = 1}    
+          y2[myIndex_2-1].style.display = "block";  
+          setTimeout(carousel2, 2000);
+      }
+
+      function carousel3() {
+          var i3;
+          var y3 = document.getElementsByClassName("imageGallery3");
+          for (i3 = 0; i3 < y3.length; i3++) {
+              y3[i3].style.display = "none";  
+          }
+          myIndex_3++;
+          if (myIndex_3 > 4) {myIndex_3 = 1}    
+          y3[myIndex_3-1].style.display = "block";  
+          setTimeout(carousel3, 2000);
+      }
+
+      function carousel4() {
+          var i4;
+          var y4 = document.getElementsByClassName("imageGallery4");
+          for (i4 = 0; i4 < y4.length; i4++) {
+              y4[i4].style.display = "none";  
+          }
+          myIndex_4++;
+          if (myIndex_4 > 4) {myIndex_4 = 1}    
+          y4[myIndex_4-1].style.display = "block";  
+          setTimeout(carousel4, 2000);
+      }
+
     </script>
     </main>
     <footer>

@@ -37,6 +37,7 @@
       <div class="banner">
         <h1><span>On the Move with Michelle</span></h1>
         <p><span> WANDER OFTEN • WONDER ALWAYS<span></p>
+        <button type="button" class="take_me">Let's Go Somewhere!</button>
       </div>
       <div class="about">
           <div class="intro">
@@ -131,6 +132,10 @@
         document.getElementById("dropbtn").onclick = function() {
           location.href = "destinations.html";
         };
+
+        document.querySelector(".take_me").onclick = function() {
+          location.href = "destinations.html";
+        }
 
         var slideIndex = 1;
         showDivs(slideIndex);

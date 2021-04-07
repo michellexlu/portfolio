@@ -104,7 +104,7 @@ main{
     color: #4a4035;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .banner p{
@@ -116,9 +116,25 @@ main{
     line-height: 200%;
 }
 
-.banner p span{
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 5px;
+.banner .take_me{
+    font-family: 'Lato', sans-serif;
+    color: #4a4035;
+    font-size: 14px;
+    text-align: center;
+    width: 220px;
+    margin: 50px auto;
+    padding: 25px 40px;
+    border: 1px solid #4a4035;
+    background: #fad9de;
+
+    position: relative;
+    animation-name: fly_in;
+    animation-duration: 4s;
+}
+
+@keyframes fly_in{
+    0%   {left:-80%; top:0px;}
+    100% {left:0px; top:0px;}
 }
 
 .about{
@@ -163,7 +179,7 @@ main{
     border: none;
 }
 
-#aboutMe:hover{
+#aboutMe:hover, .take_me:hover{
     opacity: 0.7;
 }
 
@@ -467,7 +483,7 @@ main{
     background-color: #fad9de;
 }
 
-.usa .visited, .canada .visited, .europe .visited{
+.usa .visited, .canada .visited, .europe .visited, .mexico .visited{
     text-align: center;
     padding: 10px;
     color: #4a4035;
@@ -503,7 +519,7 @@ main{
     margin-top: 30px;
 }
 
-.canada img{
+.canada img, .mexico img{
     display: block;
     width: 90%;
     height: auto;
@@ -746,8 +762,16 @@ footer{
 }
 
 .contact_info{
+    /*
     display: grid;
     grid-template-columns: 50% 50%;
+    background: #fad9de;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    */
+    display: grid;
+    grid-template-columns: 100%;
     background: #fad9de;
     margin-left: 30px;
     margin-right: 30px;
@@ -764,6 +788,7 @@ footer{
 }
 
 .contact_info p{
+    /*
     font-family: 'Lora', sans-serif;
     color: #4a4035;
     background: #fad9de;
@@ -773,9 +798,18 @@ footer{
     padding-right: 30px; 
     line-height: 200%;
     font-size: 16px;
+    */
+    font-family: 'Lora', sans-serif;
+    color: #4a4035;
+    background: #fad9de;
+    text-align: center;
+    font-size: 18px;
+    padding: 60px 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea {
     width: 100%;
     padding: 12px; 
     border: 1px solid #ccc;
@@ -804,8 +838,8 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 10px;
-    border-bottom-left-radius: 0%;
     border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
 }
 
 label{
@@ -813,7 +847,57 @@ label{
     font-size: 17px;
 }
 
-@media screen and (min-width: 660px){
+.bucket_list_banner{
+    text-align: center;
+    background-color: #fad9de;
+    padding: 20px 50px 50px;
+}
+
+.bucket_list_banner h1 {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+    color: #4a4035;
+    text-shadow: 3px 3px white;
+    font-size: 70px;
+}
+
+.bucket_list_banner h1 span{
+    font-family: "Dancing Script", cursive;
+    font-size: 40pt;
+    text-shadow: none;
+}
+
+.checklist{
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 2px;
+    line-height: 200%;
+    margin: 7px 20px;
+    padding: 30px 50px;
+    font-size: 15px;
+    background:rgb(250, 217, 222);
+}
+
+.parallax{
+    background-image: url("../images/bucket_list_banner.JPG");
+    width: 100%;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bucket_list_p{
+    text-align: center;
+    font-family: 'Lora', serif;
+    color: #4a4035;
+    padding: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 750px){
     .banner{
         display: flex;
         flex-direction: column;
@@ -832,10 +916,73 @@ label{
     .dropdown-content a, .dropdown-content p{
         font-size: 20px;
     }
+
+    .checklist{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 8%;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 30px;
+        font-size: 12px;
+        line-height: 230%;
+    }
+
+    .contact_info{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background: #fad9de;
+        margin-left: 30px;
+        margin-right: 30px;
+        border-radius: 10px;
+    }
+
+    .contact_info p{
+        font-family: 'Lora', sans-serif;
+        color: #4a4035;
+        background: #fad9de;
+        text-align: center;
+        align-self: center;
+        padding-left: 30px;
+        padding-right: 30px; 
+        line-height: 200%;
+        font-size: 16px;
+    }
+
+    .contact_form{
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+        border-bottom-left-radius: 0%;
+        border-top-left-radius: 0%;
+    }
+
+    .about_me img{
+        width: 50%;
+    }
+
+    .europe_card{
+        width: 55%;
+        margin: 0 auto;
+        padding: 30px 120px;
+    }
+}
+
+@media screen and (min-width: 950px){
     /*
     .intro{
         display: flex;
         flex-direction: row;
     }
     */
+    .about_me img{
+        width: 30%;
+    }
 }
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .banner .take_me{
+      animation: none;
+    }
+  }
