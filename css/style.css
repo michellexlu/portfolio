@@ -116,6 +116,11 @@ main{
     line-height: 200%;
 }
 
+.banner p span{
+    background-color: white;
+    opacity: 0.9;
+}
+
 .banner .take_me{
     font-family: 'Lato', sans-serif;
     color: #4a4035;
@@ -406,10 +411,9 @@ main{
 
 .destinations_body img{
     object-fit: cover;
-    /*width: 100%;*/
-    width: 416px;
+    width: 100%;
+    /*width: 416px;*/
     height: auto;
-    
 }
 
 .dest_button{
@@ -688,8 +692,8 @@ footer{
 }
 
 .flip-card{
-   width: 400px;
-   height: 420px;
+   width: 300px;
+   height: 320px;
    padding: 20px;
    margin: auto;
    perspective: 1000px;
@@ -704,7 +708,7 @@ footer{
     transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner, .flip-card:focus .flip-card-inner{
+.flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner, .flip-card:focus .flip-card-inner, .flip-card:focus-within .flip-card-inner{
     transform: rotateY(180deg);
 }
 
@@ -712,8 +716,7 @@ footer{
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
-    /* Safari */
+    -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
 }
 
@@ -735,7 +738,7 @@ footer{
 .flip-card-back p{
     text-align: center;
     font-family: 'Karla', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .flip-card.focus-within .flip-card-inner{
@@ -745,9 +748,9 @@ footer{
 .about_me h1{
     font-family: "Dancing script", cursive;
     color: #4a4035;
-    font-size: 45px;
+    font-size: 40px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .about_me h1 span{
@@ -823,14 +826,6 @@ footer{
 }
 
 .contact_info{
-    /*
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background: #fad9de;
-    margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 10px;
-    */
     display: grid;
     grid-template-columns: 100%;
     background: #fad9de;
@@ -980,54 +975,50 @@ label{
     }
 
     .contact_info{
-        display: grid;
         grid-template-columns: 50% 50%;
-        background: #fad9de;
-        margin-left: 30px;
-        margin-right: 30px;
-        border-radius: 10px;
     }
 
     .contact_info p{
-        font-family: 'Lora', sans-serif;
-        color: #4a4035;
-        background: #fad9de;
-        text-align: center;
         align-self: center;
         padding-left: 30px;
         padding-right: 30px; 
         line-height: 200%;
         font-size: 16px;
     }
-
+    
     .contact_form{
-        background-color: #f2f2f2;
-        padding: 20px;
         border-radius: 10px;
         border-bottom-left-radius: 0%;
         border-top-left-radius: 0%;
     }
-
-    /*.about_me img{
-        width: 50%;
-    }*/
 
     .europe_card{
         width: 55%;
         margin: 0 auto;
         padding: 30px 120px;
     }
-
+    /*
     .destinations_body img{
         width: 416px;
         height: auto;
+    }*/
+
+    .flip-card{
+        width: 400px;
+        height: 420px;
+     }
+
+     .flip-card-back p{
+        font-size: 18px;
+    }
+
+    .about_me h1{
+        font-size: 45px;
+        margin-bottom: 50px;
     }
 }
 
 @media screen and (min-width: 950px){
-    /*.about_me img{
-        width: 30%;
-    } */
 
     .favoritePlaces{
         display: grid;
@@ -1053,11 +1044,6 @@ label{
 
     .about_me .adventure {
         width: 60%;
-    }
-
-    .destinations_body img{
-        width: 416px;
-        height: auto;
     }
 
     .europe_card{
