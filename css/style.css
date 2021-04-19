@@ -216,7 +216,7 @@ main{
     margin-top: 10px;
 }
 
-.favoritePlaces h2{
+.favoritePlaces_section h2{
     font-family: 'Patrick Hand SC', cursive;
     text-align: center;
     font-size: 27px;
@@ -244,15 +244,20 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+}
+
+.favorite_images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .favoritePlaces img{
     max-width: 70%;
     height: auto;
     object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .fav_dest_link, .caption{
@@ -392,7 +397,6 @@ main{
 
 .dest_card{
     position: relative;
-    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid rgb(255, 157, 173);
@@ -401,10 +405,11 @@ main{
 }
 
 .destinations_body img{
-    height: auto;
     object-fit: cover;
-    width: 100%;
+    /*width: 100%;*/
+    width: 416px;
     height: auto;
+    
 }
 
 .dest_button{
@@ -529,9 +534,9 @@ main{
 }
 
 .europe_card{
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 530px 350px;
+    grid-template-rows: 530px 350px;*/
     padding: 30px;
     align-items: center;
     background-color: #f0e2cf;
@@ -665,11 +670,76 @@ footer{
 }
 
 .about_me img{
-    width: 70%;
+    width: 80%;
     height: auto;
     padding: 20px;
     display: block;
     margin: auto;
+}
+
+.about_me p{
+    font-family: 'Lato', sans-serif;
+    line-height: 200%;
+    text-align: justify;
+    color: #4a4035;
+    font-size: 15px;
+    padding: 5px 50px 5px;
+    margin-bottom: 15px;
+}
+
+.flip-card{
+   width: 400px;
+   height: 420px;
+   padding: 20px;
+   margin: auto;
+   perspective: 1000px;
+}
+
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner, .flip-card:focus .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front{
+    background-color: #D2B48C;
+}
+
+.flip-card-back h1{
+    margin-top: 10px;
+}
+
+.flip-card-back {
+  background-color: #D2B48C;
+  color: #4a4035;
+  line-height: 200%;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p{
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+}
+
+.flip-card.focus-within .flip-card-inner{
+    transform: rotateY(180deg);
 }
 
 .about_me h1{
@@ -683,16 +753,6 @@ footer{
 .about_me h1 span{
     background: #fad9de;
     padding: 20px;
-}
-
-.about_me p{
-    font-family: 'Lato', sans-serif;
-    line-height: 200%;
-    text-align: justify;
-    color: #4a4035;
-    font-size: 15px;
-    padding: 5px 50px 5px;
-    margin-bottom: 15px;
 }
 
 .about_me .adventure{
@@ -723,6 +783,7 @@ footer{
 
 .nav_item a.active_page, .active_page #dropbtn{
     border-bottom: 3px dotted #D2B48C;
+    font-family: "Dancing Script", cursive; 
 }
 
 .dropdown #dropbtn:hover{
@@ -788,17 +849,6 @@ footer{
 }
 
 .contact_info p{
-    /*
-    font-family: 'Lora', sans-serif;
-    color: #4a4035;
-    background: #fad9de;
-    text-align: center;
-    align-self: center;
-    padding-left: 30px;
-    padding-right: 30px; 
-    line-height: 200%;
-    font-size: 16px;
-    */
     font-family: 'Lora', sans-serif;
     color: #4a4035;
     background: #fad9de;
@@ -958,31 +1008,87 @@ label{
         border-top-left-radius: 0%;
     }
 
-    .about_me img{
+    /*.about_me img{
         width: 50%;
-    }
+    }*/
 
     .europe_card{
         width: 55%;
         margin: 0 auto;
         padding: 30px 120px;
     }
+
+    .destinations_body img{
+        width: 416px;
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 950px){
-    /*
-    .intro{
-        display: flex;
-        flex-direction: row;
-    }
-    */
-    .about_me img{
+    /*.about_me img{
         width: 30%;
+    } */
+
+    .favoritePlaces{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-content: center;
+    }
+
+    .favorite_images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .favoritePlaces img{
+        height: auto;
+    }
+
+    .fav_dest_link, .caption{
+        font-size: 15px;
+    }
+
+    .about_me .adventure {
+        width: 60%;
+    }
+
+    .destinations_body img{
+        width: 416px;
+        height: auto;
+    }
+
+    .europe_card{
+        width: 40%;
+        margin: 0 auto;
+        padding: 30px 200px;
+    }
+
+    .europe img{
+        width: 70%;
+    }
+
+    img.europe_header{
+        width: 100%;
+    }
+
+    .canada img, .mexico img{
+        width: 60%;
     }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
     .banner .take_me{
       animation: none;
+    }
+
+    .parallax{
+        background-attachment: scroll;
+    }
+
+    .flip-card-inner {
+        transition: none;
     }
   }
