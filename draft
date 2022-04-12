@@ -1,0 +1,519 @@
+<main id="main">
+    <div class="europe">
+      <h1>DESTINATIONS &#8611 EUROPE</h1>
+      <img class="europe_header" src="images/europe_header.JPG" alt="Europe Header">
+      <div class="visited">
+          <h2>COUNTRIES VISITED<br><span>(13/44)</span></h2>
+          <img src="images/europe_map.png" alt="countries in Europe visited">
+          <p>Europe has always been my family's go-to travel destination. I'm forever grateful to my parents for 
+              bringing my brother and I along on their wordly travels from a young age and instilling in us a 
+              passion for European culture as deep as theirs. Traveling in Europe accomodates the best of both worlds 
+              in terms of those looking to splurge on a luxurious trip, as well as those looking to travel on a budget. 
+              There is deep-rooted history all around you in Europe, buried in the art, architecture, and even in the streets, 
+              telling fascinating stories about the past and leaving you feeling a sense of enlightenment. Not to mention, 
+              I've had, without a doubt, the best meals of my life in Europe. You're guaranteed to leave with a happy soul 
+              and happy stomach. Below, I've written about a few of my favorite European cities, including must-try foods, 
+              itineraries, and travel tips!
+          </p>
+    </div>
+    <div class="france">
+      <h2 class="location_header">CÔTE D'AZUR, FRANCE</h2>
+      <div id="slideshow1" class="slideshow">
+          <div class="europe_card">
+              <img src="images/FR_1.JPG" alt="Menton, France">
+              <p>The Côte d'Azur (or French Riviera) will always hold a special place in my heart as the only place I have ever lived outside of the 
+              United States. I spent a semester abroad in a quaint coastal town just on the outskirts of Nice called Antibes. I had 
+              been studying French for 10 years prior, and I felt that the best way to achieve true fluency in the language 
+              would be to immerse myself directly in a small town of the native-speaking country. During my short-lived time there (thanks to COVID-19), 
+              I accomplished my goal of strengthening my conversational French skills while creating lasting friendships and making memories 
+              of a lifetime.
+              </p>
+          </div>
+          <div class="europe_card">
+              <h4>A List of Must-Dos for My Favorite Stops in the French Riviera</h4>
+              <img src="images/Antibes_1.jpeg" alt="Antibes">
+              <p class="france_mustdos">NICE</p>
+              <div class="bullet_list">
+                  <ol>
+                      <li>Take a stroll along the Promenade des Anglais</li>
+                      <li>Discover authentic restaurants and shops in Old Town</li>
+                      <li>Visit the Museum of Modern and Contemporary Art</li>
+                      <li>See the fun architecture of St. Nicholas Russian Orthodox Cathedral</li>
+                      <li>Ride the ferris wheel in Place Masséna (main square)</li>
+                      <li>Relax on Beau Rivage beach</li>
+                  </ol>
+              </div>
+              <p class="france_mustdos">ANTIBES</p>
+              <div class="bullet_list">
+                  <ol>
+                      <li>Go on a hike along the Cap d'Antibes</li>
+                      <li>Marvel at the art collection at the Picasso Museum</li>
+                      <li>Try fresh produce and authentic cheeses from the Marché provençal (local farmer's market)</li>
+                      <li>Pick up a sandwich from a local boulangerie (bakery) on your way to La Gravette Beach</li>
+                      <li>Take a photo in front of The Nomad sculture</li>
+                      <li>Treat yourself to a lavish dinner at Le Figuier de Saint-Esprit (awarded a Michelin star!)</li>
+                  </ol>
+              </div>
+              <p class="france_mustdos">CANNES</p>
+              <div class="bullet_list">
+                  <ol>
+                      <li>Walk along the flashy Boulevard de la Croisette lined with upscale shops and hotels</li>
+                      <li>Attend a movie showing at the Cannes Film Festival (if you're lucky!)</li>
+                      <li>Visit the Notre-Dame de l'Espérance (church)</li>
+                      <li>Watch the yachts and boats dock in Le Vieux Port (Old Port)</li>
+                      <li>Admire the Painted Walls of Cannes</li>
+                      <li>Grab a bite to eat from Marché Forville– another local farmer's market</li>
+                  </ol>
+              </div>
+          </div>
+          <div class="europe_card">
+              <h4>Eat and Drink Your Way Through the French Riviera!</h4>
+              <img src="images/france_eats.JPG" alt="french food">
+              <div class="bullet_list_2">
+                  <dl>
+                      <dt class="fr_food">FAVORITE CAFES:</dt>
+                          <dt>&#9749; Choopy's Cupcakes & Cofee-shop (Antibes)</dt>
+                          <dt>&#9749; Le Clemenceau (Antibes)</dt>
+                          <dt>&#9749; Emilie and the Cool Kids (multiple locations)</dt>
+                          <dt>&#9749; Le Perko (Antibes)</dt>
+                          <dt>&#9749; Healthy Lounge (Antibes)</dt>
+                      <dt class="fr_food">FAVORITE BAKERIES:</dt>
+                          <dt>&#129360; Aux Delices Antibois (Antibes)</dt>
+                          <dt>&#129360; Au Palais de la Friandise (Antibes)</dt>
+                          <dt>&#129360; Boulangerie L'Epi d'Or (Antibes)</dt>
+                          <dt>&#129360; PAUL (multiple locations)</dt>
+                      <dt class="fr_food">FAVORITE DINNER SPOTS:</dt>
+                          <dt>&#127860; Le Vauban (French - Antibes)</dt>
+                          <dt>&#127860; Le Figuier De Saint Esprit (French - Antibes)</dt>
+                          <dt>&#127860; La Trattoria (Italian - Antibes)</dt>
+                          <dt>&#127860; Le Kashmir (Indian - Antibes</dt>
+                          <dt>&#127860; Le Séjour (French - Nice) </dt>
+                          <dt>&#127860; Les Garçons (French - Nice)</dt>
+                  </dl>
+                  <p>** Be sure to try the gelato! Any roadside stand is guaranteed to be good **</p>
+              </div>
+          </div>
+          <button class="left_button" onclick="plusDivs(-1, slideshow1)">&#10094;</button>
+          <button class="right_button" onclick="plusDivs(+1, slideshow1)">&#10095;</button>
+      </div>
+    </div>
+    <div class="budapest">
+      <h2 class="location_header">BUDAPEST, HUNGARY</h2>
+      <div id="slideshow2" class="slideshow">
+          <div class="europe_card">
+              <img src="images/budapest_1.JPG" alt="Parliament Building">
+              <p>
+                  Budapest, Hungary is one of the few places I've been fortunate enough to travel to twice in my life. I first discovered the beautiful 
+                  city in 2015 when I took a family trip there in the summertime. The second time was about 5 years later during my study abroad experience 
+                  in the wintertime, which showed me a completely different side of the city. It was as if I was visiting for the first time all over again. 
+                  Budapest is famous for its long-standing history, mesmerizing architecture, natural hot springs, and dynamic night-life– all for a cheap price! The locals are 
+                  all friendly and welcoming, especially in comparison to those in some other European countries.
+              </p>
+          </div>
+          <div class="europe_card">
+              <h4>3-Day Itinerary</h4>
+              <p>I stayed in a hostel located on the Pest side of the Danube River, so this sample itinerary is based off where I was personally located!</p>
+              <img class="buda_img" src="images/budapest_2.JPG" alt="Panoramic View">
+              <p class="france_mustdos">DAY 1</p>
+              <div class="bullet_list">
+                  <ol>
+                      <li>Breakfast at STIKA (Hungarian food)</li>
+                      <li>Check out the local vintage stores (Retrock, Szputnyik)</li>
+                      <li>Go shopping down Fashion Street</li>
+                      <li>Grab a delicious snack at the Donut Library</li>
+                      <li>Catch the sunset at Gellert Hill</li>
+                      <li>Dinner at Antré (traditional Hungarian food)</li>
+                      <li>Dessert at Chez Dodo (Macaron shop)</li>
+                  </ol>
+              </div>
+              <img class="buda_img" src="images/budapest_3.jpg" alt="St. Stephen's Basilica">
+              <p class="france_mustdos">DAY 2</p>
+              <div class="bullet_list">
+                  <ol>
+                      <li>Breakfast at Cirkusz</li>
+                      <li>See the Parliament Building</li>
+                      <li>Tour St. Stephen's Basilica</li>
+                      <li>Take a look at the statues in Heroes' Square</li>
+                      <li>Spend the rest of your day relaxing at Szechenyi Thermal Baths</li>
+                      <li>Dinner at Mazel Tov</li>
+                  </ol>
+              </div>
+              <img class="buda_img" src="images/budapest_4.jpg" alt="Fisherman's Bastion">
+              <p class="france_mustdos">DAY 3</p>
+              <div class="bullet_list">
+                  <ol>
+                      <li>Breakfast at Waffle & Love</li>
+                      <li>Make your way to the Pest side of the Danube</li>
+                      <li>Tour Matthias Church</li>
+                      <li>Visit Buda Castle</li>
+                      <li>Get a stunning view of the city from the Fisherman's Bastion</li>
+                      <li>Dinner at Tomi Lángos (Hungarian Street Food)</li>
+                      <li>Go to a famous ruin bar</li>
+                  </ol>
+              </div>
+          </div>
+          <div class="europe_card">
+              <h4>Eat and Drink Your Way Through Budapest!</h4>
+              <img src="images/buda_eats.JPG" alt="Eating donuts in Budapest">
+              <div class="bullet_list_2">
+                  <dl>
+                      <dt class="fr_food">BREAKFAST/BRUNCH:</dt>
+                          <dt>&#9749; STIKA (sit-down)</dt>
+                          <dt>&#9749; Cirkusz (sit-down)</dt>
+                          <dt>&#9749; New York Palace Cafe (sit-down)</dt>
+                          <dt>&#9749; Warmcup (quick coffee)</dt>
+                          <dt>&#9749; The Sweet (café)</dt>
+                      <dt class="fr_food">LUNCH/DINNER:</dt>
+                          <dt>&#127860; Borbirosag (Hungarian bistro)</dt>
+                          <dt>&#127860; Mazel Tov (Mediterranean ruin bar style restaurant)</dt>
+                          <dt>&#127860; Tomi Lángos (Hungarian street food)</dt>
+                          <dt>&#127860; TLVeatery (Israeli)</dt>
+                          <dt>&#127860; Deep Burger (American)</dt>
+                      <dt class="fr_food">DESSERT:</dt>
+                          <dt>&#127856; Waffle & Love (fun waffles)</dt>
+                          <dt>&#127856; Chez Dodo (macarons)</dt>
+                          <dt>&#127856; The Donut Library (donuts)</dt>
+                          <dt>&#127856; Gelarto Rosa (gelato)</dt>
+                  </dl>
+              </div>
+          </div>
+          <button class="left_button" onclick="plusDivs(-1, slideshow2)">&#10094;</button>
+          <button class="right_button" onclick="plusDivs(+1, slideshow2)">&#10095;</button>
+      </div>
+    </div>
+    <div id="amsterdam">
+      <h2 class="location_header">AMSTERDAM, NETHERLANDS</h2>
+      <div id="slideshow3" class="slideshow">
+          <div class="europe_card">
+              <img src="images/Amsterdam_2.JPG" alt="Amsterdam at night">
+              <p>
+                  Amsterdam definitely makes it on my list of top 5 all-time favorite destinations. The unconventional culture of Amsterdam, coupled with its 
+                  natural beauty and contemporary architectural style, has me seriously considering moving there someday. Often referred to as the 
+                  "Venice of the North," the city is most famous for its canals that are constructed in a unique radial structure around the city center. 
+                  Right at the center of the canals is where you will find Dam Square, which stems off into multiple popular streets full of shops and 
+                  restaurants. During my weekend trip to this spirited Dutch city, I indulged in delectable foods and one-of-a-kind experiences.
+              </p>
+          </div>
+          <div class="europe_card">
+              <h4>5 Things You Must Do Before Leaving Amsterdam</h4>
+              <img class="buda_img" src="images/moco_museum.jpg" alt="Moco Museum">
+              <div class="bullet_list_3">
+                  <ol>
+                      <li>Take advantage of its world famous museums</li>
+                          <p>The <strong>Moco Museum</strong> is every street art lover's dream. It showcases works by famous modern artists like Banksy and incorporates 
+                              a captivating interactive art exhibition that makes for the perfect Instagram-worthy photo spot.<br>
+                              <br>
+                              While <strong>Rijksmuseum</strong> might be a mouthful to say, it is one of the most famous museums in the world. It captures over 800 years of 
+                              Dutch history with about 8000 pieces of art on display. Tourists from all over the world flock to this museum in particular to see The Night 
+                              Watch by Rembrandt.<br>
+                          </p>
+                      <img class="buda_img" src="images/Amsterdam_4.jpg" alt="Amsterdam Dancing Houses">
+                      <li>Set sail on a cruise through the canals of Amsterdam</li>
+                          <p>The best way to see all the hidden corners of Amsterdam is by way of boat. There are 165 canals running through the city– each a little different from the next. 
+                              I had a great experience booking a shared cruise boat with some friends, as it included food and drinks, as well as a guide who helped explain the history and sights. 
+                              We also had the cool opportunity to meet other tourists who joined us on the tour.
+                          </p>
+                      <img class="buda_img" src="images/poffertjes.jpg" alt="Poffertjes">
+                      <li>Try some Amsterdam food favorites</li>
+                          <p>You can't leave Amsterdam without trying a few of their famous local treats! My favorites were the stroopwaffels (thin wafers with syrup filling on the inside) and 
+                              poffertjes (mini pancakes, as pictured above). Both of these often come with a variety of toppings of your choice- personally, I recommend adding strawberries, 
+                              bananas, and nutella to your poffertjes; it was to die for! The best part is that you won't have to look hard to find these delicacies, since street vendors 
+                              and restaurants sell them all over the city.
+                          </p>
+                      <img class="buda_img" src="images/Amsterdam_3.JPG" alt="Amsterdam Buildings">
+                      <li>Go on a bike ride through the city</li>
+                          <p>I'm sure when you picture Amsterdam, if you're not thinking of canals, you're most likely envisioning the city populated by bikers. Bicycling is recommended as the 
+                              easiest and most efficient form of transportation around the city. Biking is a significant part of daily life for residents, but if you happen to visit for a quick trip, 
+                              renting a bike to see the city is a must-do. A fun fact that I learned during my canal tour is that 12,000-15,000 bicycles are pulled out of the canals each year!
+                          </p>
+                      <img class="buda_img" src="images/Anne_Frank_house.jpg" alt="Anne Frank House">
+                      <li>Visit the Anne Frank House</li>
+                          <p>The Anne Frank House is another famous destination in Amsterdam. This museum tells the devastating story of Anne Frank by allowing visitors to read her diary and view the 
+                              Secret Annex where she and her family hid during World War II. For many, it is quite an emotional experience to see some of the real artifacts that Anne Frank had written 
+                              about in her diary. The museum is also located in the charming Jordaan district, which I highly recommend walking around if you're in the area.
+                          </p>
+                  </ol>
+              </div>
+          </div>
+          <div class="europe_card">
+              <h4>Eat and Drink Your Way Through Amsterdam!</h4>
+              <img src="images/amsterdam_eats.JPG" alt="Breakfast in Amsterdam">
+              <div class="bullet_list_2">
+                  <dl>
+                      <dt class="fr_food">BREAKFAST/BRUNCH:</dt>
+                          <dt>&#9749; Mortimer Amsterdam (pictured above)</dt>
+                          <dt>&#9749; Gs de Pijp</dt>
+                          <dt>&#9749; Patisserie Holtkamp</dt>
+                          <dt>&#9749; Madam Pancake</dt>
+                          <dt>&#9749; Cafe Chantilly</dt>
+                      <dt class="fr_food">LUNCH/DINNER:</dt>
+                          <dt>&#127860; Bulls and Dogs (try their milkshakes!)</dt>
+                          <dt>&#127860; BAK Restaurant (Dutch food)</dt>
+                          <dt>&#127860; Nooch (Asian food)</dt>
+                          <dt>&#127860; The Avocado Show</dt>
+                          <dt>&#127860; Foodhallen (grand food hall)</dt>
+                      <dt class="fr_food">DESSERT:</dt>
+                          <dt>&#127856; REE7 (crazy milkshakes)</dt>
+                          <dt>&#127856; Melly's Stroopwafels</dt>
+                          <dt>&#127856; Polaberry (chocolate shop)</dt>
+                          <dt>&#127856; Winkel 43 (for a famous Dutch appeltaart- or apple pie)</dt>
+                  </dl>
+              </div>
+          </div>
+          <button class="left_button" onclick="plusDivs(-1, slideshow3)">&#10094;</button>
+          <button class="right_button" onclick="plusDivs(+1, slideshow3)">&#10095;</button>
+      </div>
+    </div>
+    <div class="italy">
+      <h2 class="location_header">VENICE, ITALY</h2>
+      <div id="slideshow4" class="slideshow">
+          <div class="europe_card">
+              <img src="images/Venice_1.JPG" alt="Me in Venice">
+              <p>
+                  I can wholeheartedly confirm that Venice is just as magical as it looks in all the movies and photos. It is one of the most beautiful cities I have ever laid eyes on.
+                  Tourists mainly visit for the canals that function in place of roads throughout the city, since the entire region is built on water. The blue water of the Adriatic Sea 
+                  contrasted with the red roofs of the buildings paint a picturesque view that seems to have come straight out of a storybook. Prepare for a diet consisting mostly 
+                  of pizza, pasta, and gelato, but don't worry! There are so many attractions to see that all of the walking you'll be doing around the city will work the food right off 
+                  (plus it tastes so good that it's more than worth it).
+              </p>
+          </div>
+          <div class="europe_card">
+              <h4>What to See and Do in Venice</h4>
+              <img class="buda_img" src="images/Venice_2.JPG" alt="Venice Canals">
+              <figcaption class="italy_caption">Take a gondola ride through the canals</figcaption>
+              <img class="buda_img" src="images/Venice_4.jpg" alt="St. Mark's Square">
+              <figcaption class="italy_caption">Enjoy the crowd in St. Mark's Square while grabbing a bite to eat and listening to live music</figcaption>
+              <img class="buda_img" src="images/Venice_3.JPG" alt="Doge's Palace">
+              <figcaption class="italy_caption">Tour Doge's Palace – the residence of the Doge of Venice</figcaption>
+              <img class="buda_img" src="images/Venice_5.jpg" alt="Rialto Bridge">
+              <figcaption class="italy_caption">Walk across the famous Rialto Bridge over the Grand Canal and stop for a photo op!</figcaption>
+              <img class="buda_img" src="images/burano.JPG" alt="Burano Island">
+              <figcaption class="italy_caption">Take a day trip to the nearby small island of Burano, known as Italy's Rainbow Island due to all of the  
+                  vibrantly colored homes</figcaption>
+          </div>
+          <div class="europe_card">
+              <h4>Eat and Drink Your Way Through Venice!</h4>
+              <p>Venetian food places a large emphasis on seafood, so expect many fish dishes when you're there!</p>
+              <img src="images/venice_eats.JPG" alt="Dinner in Venice">
+              <div class="bullet_list_2">
+                  <dl>
+                      <dt class="fr_food">CAFÉS/QUICK BITES:</dt>
+                          <dt>&#9749; Pasticceria Marchini Time (bakery)</dt>
+                          <dt>&#9749; Torrefazione Cannaregio (café- best coffee!)</dt>
+                          <dt>&#9749; Rosa Salva (pastry shop)</dt>
+                          <dt>&#9749; La Bottiglia (paninis)</dt>
+                      <dt class="fr_food">LUNCH/DINNER:</dt>
+                          <dt>&#127860; Trattoria Al Gazzettino (seafood- pictured above)</dt>
+                          <dt>&#127860; Chat qui Rit (Italian)</dt>
+                          <dt>&#127860; Ristorante Ai Barbacani (Italian)</dt>
+                          <dt>&#127860; Basegò Venezia (Venetian tapas)</dt>
+                      <dt class="fr_food">DESSERT:</dt>
+                          <dt>&#127856; Gelatoteca Suso (gelato)</dt>
+                          <dt>&#127856; Pasticceria Tonolo (dessert shop)</dt>
+                          <dt>&#127856; Venchi (gelato)</dt>
+                          <dt>&#127856; Farini (bakery)</dt>
+                  </dl>
+              </div>
+          </div>
+          <button class="left_button" onclick="plusDivs(-1, slideshow4)">&#10094;</button>
+          <button class="right_button" onclick="plusDivs(+1, slideshow4)">&#10095;</button>
+    </div>
+    <div class="greece">
+      <h2 class="location_header">GREEK ISLANDS</h2>
+      <div id="slideshow5" class="slideshow">
+          <div class="europe_card">
+              <img src="images/greece_1.JPG" alt="Santorini buildings">
+              <p>
+                  Every travel agency website is bound to display an image of the iconic blue-domed, white-wallled villages of the Greek islands. 
+                  If a chance to see this spectacular scenery in person isn't enough of a reason to make a trip, then the food and beaches will 
+                  surely convince you. I've had the chance to visit Mykonos and Santorini, which are the 2 most popular islands among the hundreds 
+                  of inhabited islands belonging to Greece. While the two share many physical similarities, they radiate completely different 
+                  ambiances. Mykonos is famous for its upbeat and upscale scene; whereas, Santorini has a more relaxed and romantic atmosphere. 
+                  I'm beyond grateful for having had the opportunity to get a taste of both the rowdy and serene sides to the Greek islands.
+              </p>
+          </div>
+          <div class="europe_card">
+              <h4>How to Travel Mykonos & Santorini</h4>
+              <img class="buda_img" src="images/greece_2.jpg" alt="Mykonos Windmills">
+              <p class="france_mustdos">MYKONOS</p>
+              <div class="bullet_list_4">
+                  <ol>
+                      <li>Fly into Athens, then take a high-speed 2 hour ferry from Athens to Mykonos Port</li>
+                      <li>Spend your first day walking down the streets of Mykonos Town</li>
+                          <p>Every turn you take will lead you to a new colorful street full of restaurants, bars, and boutiques.</p>
+                      <li>Cool off by getting a refreshing drink somewhere along Little Venice while looking out at the Aegean Sea</li>
+                          <img class="buda_img" src="images/greece_4.JPG" alt="Little Venice">
+                          <p>Little Venice is a strip of old houses and restaurants located right at the edge of the sea. It is one of the best places to watch 
+                              the sun set over the still water in Mykonos.
+                          </p>
+                      <li>Right next to Little Venice is where you'll find the famous windmills of Mykonos.</li>
+                          <p>There are 16 windmills in total, but only 7 sit at the top of the hill in Mykonos Town (pictured above).</p>
+                      <li>Go island hopping from Mykonos to the nearby Cycladic islands.</li>
+                          <p>The central location of Mykonos makes it the perfect starting point for a day of island-hopping to see some of the smaller Greek 
+                              islands. We ended up staying on one of the islands and renting a beach cabana for the day- so relaxing! 
+                          </p>
+                      <li>Almost any restaurant in Mykonos Town is guaranteed to be good, but I highly recommend dinner at M-eating</li>
+                          <img class="buda_img" src="images/evas_garden.JPG" alt="M-eating for Dinner">
+                          <p>It serves authentic Mediterranean cuisine and is tucked away on a busy side street. We were seated under the vine-covered verandah, 
+                              and it was the perfect place to dine and people watch at the same time.
+                          </p>
+                  </ol>
+              </div>
+              <img class="buda_img" src="images/greece_3.JPG" alt="Santorini Sunset">
+              <p class="france_mustdos">SANTORINI</p>
+              <div class="bullet_list_4">
+                  <ol>
+                      <li>From Mykonos, take a 2-3 hour ferry to Santorini</li>
+                      <li>Navigate through the small streets of the capital city, Fira</li>
+                      <li>While in Fira, visit the Cathedral of St. John the Baptist</li>
+                          <img class="buda_img" src="images/greece_6.jpg" alt="Cathedral of St. John the Baptist">
+                          <p>This cathedral is the main Catholic church on Santorini with beautiful architecture and peach-colored exteriors. There are also many museums 
+                              and art galleries in the area that I recommend wandering through to gain a deeper understanding of Greek culture and history.</p>
+                      <li>MUST DO: Watch the sunset in Oia</li>
+                          <p>Sitting at the top of Oia Castle and watching the sunset was a surreal moment for me. The orange and pink skies complimented the whitewashed 
+                              buildings perfectly, and you even get a view of the windmills in the distance. The crowd starts forming way before the sun sets, so I 
+                              suggest getting there early to secure a good spot.
+                          </p>
+                      <li>Stop by the quirky Atlantis Books bookstore while exploring the main street of Oia</li>
+                          <img class="buda_img" src="images/greece_5.JPG" alt="Atlantis Books bookstore">
+                          <p>This bookshop is a hidden gem that transports you into a storybook upon entering. It holds a wide selection of first 
+                              edition books, and the walls are covered in famous book quotes, posters, and murals. You may even find a few cats perched on top 
+                              of a stack of books in an attempt to escape the heat.
+                          </p>
+                      <li>Try authentic Greek tapas</li>
+                          <p>One of the best meals I had during this trip was at Melitini, a quaint Greek tapas restaurant located in Oia. Tapas are a fun way  
+                              to taste test a bunch of different greek dishes, especially with a large group of people. You really can't go wrong with any 
+                              of the spreads, seafood, or meats.
+                          </p>
+                      <li>If you're feeling adventurous, go parasailing!</li>
+                      <img class="buda_img" src="images/greece_7.JPG" alt="Parasailing">
+                  </ol>
+              </div>
+          </div>
+          <div class="europe_card">
+              <h4>What to Know Before Your Visit</h4>
+              <img src="images/greece_8.JPG" alt="View of Mykonos">
+              <div class="bullet_list_4">
+                  <ul>
+                      <li>If you don't plan on renting a car, getting around within the islands by bus is your best and most cost effective bet.</li>
+                          <p>And if you do want to drive yourself, you'll have to obtain an International Driving Permit beforehand.</p>
+                      <li>Most hotels are located outside of the downtown area (and they're cheaper too!)</li>
+                      <li>The islands are big on using cash, so make sure to withdraw plenty before your trip.</li>
+                      <li>The summer season (June-August) is by far the best time to visit weather-wise, but that also means those months attract 
+                          the most tourists.</li>
+                      <li>Make sure to bring comfortable shoes! You'll be doing a lot of walking and the streets can be quite steep.</li>
+                      <li>The locals are all very much used to tourists, so almost everyone I encountered spoke and understood English.</li>
+                          <p>However, it's always nice to learn a few common words and phrases in the native language before arriving in a foreign country.<br>
+                          For example, 'efharisto' means 'thank you' in Greek.</p>
+                  </ul>
+              </div>
+          </div>
+          <button class="left_button" onclick="plusDivs(-1, slideshow5)">&#10094;</button>
+          <button class="right_button" onclick="plusDivs(+1, slideshow5)">&#10095;</button>
+    </div>
+    <div id="croatia">
+      <h2 class="location_header">DUBROVNIK, CROATIA</h2>
+      <div id="slideshow6" class="slideshow">
+          <div class="europe_card">
+              <img src="images/croatia_2.JPG" alt="Dubrovnik Old Town">
+              <p>
+                  Croatia was a country like no other that I had visited in Europe before. Unlike many other fan-favorite European hotspots, 
+                  Croatia was only starting to gain popularity as a tourist destination when I had visited with my family in 2017. Without 
+                  the disruption of packed crowds at every landmark, I was really able to take in all the beauty the country had to offer. It's 
+                  affordable yet rich with history, culture, and natural attractions. If you're a fan of Game of Thrones, the city of 
+                  Dubrovnik might look familiar to you, as it served as the main filming location for King's Landing.
+              </p>
+          </div>
+          <div class="europe_card">
+              <h4>&#128248; Most Photogenic Spots in Dubrovnik &#128248;</h4>
+              <img class="buda_img" src="images/croatia_1.JPG" alt="Venice Canals">
+              <figcaption class="italy_caption">The Dubrovnik Cable Car at sunset</figcaption>
+              <img class="buda_img" src="images/croatia_3.JPG" alt="City Walls">
+              <figcaption class="italy_caption">The view from the City Walls encircling Old Town Dubrovnik</figcaption>
+              <img class="buda_img" src="images/croatia_4.JPG" alt="St. Blaise Church">
+              <figcaption class="italy_caption">Church of Saint Blaise</figcaption>
+              <img class="buda_img" src="images/croatia_6.jpg" alt="Old Port Dubrovnik">
+              <figcaption class="italy_caption">Porat - Old Port Dubrovnik</figcaption>
+              <img class="buda_img" src="images/croatia_5.JPG" alt="Side street of Dubrovnik">
+              <figcaption class="italy_caption">Many off-the-path side streets are blooming with colorful greenery and isolated 
+                  from other tourists
+              </figcaption>
+          </div>
+          <div class="europe_card">
+              <h4>Where else to go from Dubrovik?</h4>
+              <p>Ideally, 2-3 days is the perfect amount of time needed to explore Dubrovnik. That being said, if you're looking to stay 
+                  in Croatia for a longer trip, there are many other cities and attractions to see while you're there.</p>
+              <p class="croatia_dest">SPLIT</p>
+              <img class="buda_img" src="images/croatia_7.JPG" alt="View from Diocletian's Palace">
+              <p>From Dubrovnik, you could easily rent a car and take the scenic route to Split. The city is known for its nice beaches and lively atmosphere.
+                  Spend another day or 2 here relaxing on the beach, people watching on the Riva Promenade, and exploring Diocletian's Palace in the 
+                  Old Town of Split. I also took a day trip to the gorgeous coastal city of Trogir when I visited, which is only a 35 minute drive away.
+              </p>
+              <p class="croatia_dest">KRKA FALLS & PLITVICE LAKES</p>
+              <img class="buda_img" src="images/croatia_8.JPG" alt="Krka Waterfall">
+              <p>These two national parks are both famous for their majestic waterfalls. If you're coming from Split, I recommend stopping at Krka first to 
+                  walk through the enchanting woodlands of the park that ultimately lead to the main waterfall, which you can actually swim right up to! You 
+                  only need a few hours at Krka before heading to Plitvice Lakes. Plitvice, on the other hand, forbids swimming, but makes up for it with 
+                  a vast array of remarkable trails and lakes.
+              </p>
+              <p class="croatia_dest">ZAGREB</p>
+              <img class="buda_img" src="images/croatia_9.JPG" alt="St. Mark's Church">
+              <p>Continuing on with our driving tour of Croatia, Zagreb, the country's capital, is just another 2 hour drive from Plitvice National Park. 
+                  This city offers many attractions to see, ranging from historic landmarks to modern areas with eccentric museums and fun cafes. A few 
+                  must-sees include: St. Mark's Church, the Museum of Broken Relationships, Zabreb's Art Pavillion, the Croatian National Theatre, and the 
+                  Lotrščak Tower.
+              </p>
+          </div>
+          <button class="left_button" onclick="plusDivs(-1, slideshow6)">&#10094;</button>
+          <button class="right_button" onclick="plusDivs(+1, slideshow6)">&#10095;</button>
+    </div>
+  <script>
+
+      document.getElementById("dropbtn").onclick = function() {
+          location.href = "destinations.html";
+      };
+
+      var slideshow1 = document.getElementById("slideshow1");
+      slideshow1.currentSlideIndex = 1;
+      showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+      var slideshow2 = document.getElementById("slideshow2");
+      slideshow2.currentSlideIndex = 1;
+      showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+      var slideshow3 = document.getElementById("slideshow3");
+      slideshow3.currentSlideIndex = 1;
+      showSlides(slideshow3.currentSlideIndex, slideshow3);
+
+      var slideshow4 = document.getElementById("slideshow4");
+      slideshow4.currentSlideIndex = 1;
+      showSlides(slideshow4.currentSlideIndex, slideshow4);
+
+      var slideshow5 = document.getElementById("slideshow5");
+      slideshow5.currentSlideIndex = 1;
+      showSlides(slideshow5.currentSlideIndex, slideshow5);
+
+      var slideshow6 = document.getElementById("slideshow6");
+      slideshow6.currentSlideIndex = 1;
+      showSlides(slideshow6.currentSlideIndex, slideshow6);
+
+      function plusDivs(n, slideshow) {
+          showSlides(slideshow.currentSlideIndex += n, slideshow);
+      }
+
+      function currentSlide(n, slideshow) {
+          showSlides(slideshow.currentSlideIndex = n, slideshow);
+      }
+
+      function showSlides(n, slideshow) {
+          var i;
+          var slides = slideshow.getElementsByClassName("europe_card");
+          if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+          if (n < 1) {slideshow.currentSlideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          slides[slideshow.currentSlideIndex-1].style.display = "block";
+      }
+  </script>
+  </main>
